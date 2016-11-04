@@ -1,7 +1,7 @@
 resume
 ======
 
-[View it here](http://stackoverflow.com/questions/22348093/pycharm-github-push-failed-fatal-authentication-failed/22512390#22512390)
+[View it here](https://device999.github.io/CV/)
 
 Print the page as PDF to get a copy.
 
