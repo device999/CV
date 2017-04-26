@@ -19,4 +19,3 @@ Rahimbeyli Sattar
 Contact:
 =======================================================================
 Email: sattari4@hotmail.com
-Twitter: @3rdwave_themes
