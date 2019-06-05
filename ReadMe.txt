@@ -1,6 +1,6 @@
 Free Bootstrap Resume/CV Template for developers
 
-Theme name:
+Theme name: 1
 =======================================================================
 Orbit
 
