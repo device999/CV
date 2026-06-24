@@ -33,7 +33,7 @@
    <div class="wrapper">
       <div class="sidebar-wrapper">
          <div class="profile-container">
-            <img class="profile" src="assets/images/circle.png" alt="" />
+            <img class="profile" src="assets/images/profile.png" alt="" style="width: 160px; height:160px;border-radius: 100%;" />
             <h1 class="name">Rahimbayli Sattar</h1>
             <h3 class="tagline">Software Developer</h3>
             <br />
@@ -81,37 +81,17 @@
             </ul>
          </div>
          <!--//interests-->
-         <div class="interests-container container-block">
+         <!-- <div class="interests-container container-block">
             <h2 class="container-block-title">Interests</h2>
             <ul class="list-unstyled interests-list">
                <li>Medical Informatics</li>
                <li>Machine Learning</li>
             </ul>
-         </div>
+         </div> -->
          <!--//interests-->
       </div>
       <!--//sidebar-wrapper-->
       <div class="main-wrapper">
-         <!--//skills-section-->
-         <section class="skills-section section">
-            <h2 class="section-title"><i class="fa fa-rocket"></i>Skills</h2>
-            <div>
-               <p><span class="job-title">Backend:</span><br/> Java (8, 11, 17, 18), Javascript (ES6+), TypeScript, CoffeeScript, Python</p>
-               <p><span class="job-title">Frameworks:</span><br/> Spring Framework (Spring Boot, JDBC Template, Security, Data JPA, AOP), Quarkus, Hibernate, React Native, 
-                  Angular 18, Django, Play Framework, Express.js, GWT
-               </p>
-               <p><span class="job-title">Frontend:</span><br/> React, Ajax, JQuery, Bootstrap 3, Materialize, Kendo, Scss,
-                  Sass, Less</p>
-               <p><span class="job-title">CI/CD:</span><br/> Docker, Jenkins, CircleCI, Bitbucket pipelines, Gitlab pipelines, Bamboo
-               </p>
-               <p><span class="job-title">Testing:</span><br/> JUnit, Mockito, Jest</p>
-               <p><span class="job-title">Databases:</span><br/> SQL, MySQL, PostgreSQL, Mongo, DB2, Firebase</p>
-
-               <p><span class="job-title">Build tools:</span><br/> Maven, SBT, ANT, Gradle</p>
-               <!-- <p><span class="job-title">CMS:</span> Wordpress, Joomla, Kirby, Typo3</p> -->
-            </div>
-         </section>
-         
          <!--//experiences-section-->
          <section class="section experiences-section">
             <h2 class="section-title"><i class="fa fa-briefcase"></i>Experiences</h2>
@@ -124,35 +104,28 @@
                   </div>
                   <div class="company">Dedalus HealthCare GmbH, Bonn</div>
                </div>
-               <b>Working on different projects</b>
                <div class="details">
                   <table>
                      <tr>
                         <td>
                            <i class="fa fa-dot-circle-o" aria-hidden="true" style="color:#2d7788"></i>
-                           Development of an API based on Quarkus, and integration into the Camunda Engine using REST architecture and Kafka for event-driven microservice communication
+                           Designed and built an online front-desk and waiting-room management system using Spring Boot and Angular 18, integrated with Grafana dashboards for real-time operational monitoring
                         </td>
                      </tr>
                      <tr>
                         <td>
                            <i class="fa fa-dot-circle-o" aria-hidden="true" style="color:#2d7788"></i>
-                           Development of an online front desk and waiting room for a hospital, using Spring Boot and Angular integrated with Grafana dashboards
+                           Architected and delivered a high-throughput REST API on Quarkus integrated with the Camunda BPM Engine, enabling workflow orchestration for clinical processes
                         </td>
                      </tr>
                      <tr>
                         <td>
                            <i class="fa fa-dot-circle-o" aria-hidden="true" style="color:#2d7788"></i>
-                           Development of a patient portal for a hospital, using Spring Boot and Angular and Elasticsearch for fast medical data retrieval
-                        </td>
-                     </tr>
-                        <td>
-                           <i class="fa fa-dot-circle-o" aria-hidden="true" style="color:#2d7788"></i>
-                           <i>
-                              Technologies: Java, Quarkus, Spring Boot, Angular 18, Kafka, Grafana, Elasticsearch, Docker
-                           </i>
+                           Led adoption of containerized deployments via Docker across all owned services, streamlining release cycles and reducing environment inconsistencies
                         </td>
                      </tr>
                   </table>
+                  <p><a href="assets/files/DedalusRec.pdf" target="_blank">Recommendation Letter (in German)</a> </p>
                </div>
             </div>
   
@@ -166,7 +139,6 @@
                   <!--//upper-row-->
                   <div class="company">Universitätsklinikum, Bonn</div>
                </div>
-               <b>Worked in different projects</b>
                <div class="details">
                   <table>
 
@@ -177,21 +149,25 @@
                      <tr>
                         <td>
                            <i class="fa fa-dot-circle-o" aria-hidden="true" style="color:#2d7788"></i>
-                           Development of a visualization and search solution for FHIR bundles using Angular
+                           Built a FHIR bundle visualization and search solution using Angular, enabling clinical researchers to navigate complex HL7/FHIR medical datasets more efficiently
                         </td>
                      </tr>
                      <tr>
                         <td>
                            <i class="fa fa-dot-circle-o" aria-hidden="true" style="color:#2d7788"></i>
-                           Development of additional modules to transform medical data into FHIR entities
+                           Developed ETL modules to transform heterogeneous medical data into standardized FHIR entities, improving interoperability across several hospital information systems
                         </td>
                      </tr>
                      <tr>
                         <td>
                            <i class="fa fa-dot-circle-o" aria-hidden="true" style="color:#2d7788"></i>
-                           <i>
-                              Technologies: Java, Spring Boot, Angular, Docker
-                           </i>
+                           Delivered a Spring Boot + Angular patient portal with role-based access control
+                        </td>
+                     </tr>
+                     <tr>
+                        <td>
+                           <i class="fa fa-dot-circle-o" aria-hidden="true" style="color:#2d7788"></i>
+                           Maintained unit test coverage using JUnit and Mockito across backend services
                         </td>
                      </tr>
                   </table>
@@ -208,37 +184,24 @@
                   <!--//upper-row-->
                   <div class="company">CodeFrog IT GmbH, Braunschweig</div>
                </div>
-               <b>Working in different projects for different clients</b>
                <div class="details">
                   <table>
                      <tr>
                         <td>
                            <i class="fa fa-dot-circle-o" aria-hidden="true" style="color:#2d7788"></i>
-                           Creating financial mobile app for stock trading with the following tech stack: React
-                           Native with Spring Boot backend and Bitbucket Pipelines with Docker for CI/CD
+                           Built a cross-platform financial trading mobile app using React Native with a Spring Boot backend, handling live stock data 
                         </td>
                      </tr>
                      <tr>
                         <td>
                            <i class="fa fa-dot-circle-o" aria-hidden="true" style="color:#2d7788"></i>
-                           Creating time management web app based on Angular with Spring Boot backend and
-                           Jenkins with Docker for CI/CD
+                           Engineered a vehicle delivery management platform with Angular/Spring Boot; introduced Bamboo-based CI/CD pipeline 
                         </td>
                      </tr>
                      <tr>
                         <td>
                            <i class="fa fa-dot-circle-o" aria-hidden="true" style="color:#2d7788"></i>
-                           Creating platform for management of vehicle delivery and sales based on Angular with
-                           Spring boot backend and Bamboo for CI/CD
-                        </td>
-                     </tr>
-                     <tr>
-                        <td>
-                           <i class="fa fa-dot-circle-o" aria-hidden="true" style="color:#2d7788"></i>
-                           <i>
-                              Technologies: Java, Typescript, Spring Boot, Angular, React Native, RxJS, Redux, Mongo
-                              DB, MySQL, Docker, Jenkins, Bamboo, Bitbucket Pipelines, Jest, Mockito, SonarQube
-                           </i>
+                           Implemented Redux state management and RxJS reactive patterns for complex UI data flows
                         </td>
                      </tr>
                   </table>
@@ -260,26 +223,19 @@
                      <tr>
                         <td>
                            <i class="fa fa-dot-circle-o" aria-hidden="true" style="color:#2d7788"></i>
-                           Development of rule-based reward system with Play Framework
+                           Developed a rule-based Pay-for-Performance reward system using Play Framework, supporting clinical trial incentive structures 
                         </td>
                      </tr>
                      <tr>
                         <td>
                            <i class="fa fa-dot-circle-o" aria-hidden="true" style="color:#2d7788"></i>
-                           Extending an existing Java-based back-end service for clinical trial management system
+                           Extended a Java backend for a clinical trial management system (CTMS), adding new modules that reduced manual data entry 
                         </td>
                      </tr>
                      <tr>
                         <td>
                            <i class="fa fa-dot-circle-o" aria-hidden="true" style="color:#2d7788"></i>
-                           Managing deployment server, together with database administration and ci/cd pipelines
-                        </td>
-                     </tr>
-                     <tr>
-                        <td>
-                           <i class="fa fa-dot-circle-o" aria-hidden="true" style="color:#2d7788"></i>
-                           <i>Technologies: Java, Javascript, Play Framework, Hibernate, GWT, MySQL, BitBucket
-                              pipelines, Docker</i>
+                           Administered deployment servers, databases, and CI/CD pipelines
                         </td>
                      </tr>
                   </table>
@@ -298,42 +254,18 @@
                   <div class="company">Advanced Dynamics, Cologne</div>
                </div>
                <!--//meta-->
-               <b>Worked on different projects</b>
                <div class="details">
                   <table>
                      <tr>
                         <td>
                            <i class="fa fa-dot-circle-o" aria-hidden="true" style="color:#2d7788"></i>
-                           Development of internal time management calendar based on Angular
+                           Developed an internal time management calendar in Angular 
                         </td>
                      </tr>
                      <tr>
                         <td>
                            <i class="fa fa-dot-circle-o" aria-hidden="true" style="color:#2d7788"></i>
-                           Building several media apps on Wordpress
-                        </td>
-                     </tr>
-                     <tr>
-                        <td>
-                           <i class="fa fa-dot-circle-o" aria-hidden="true" style="color:#2d7788"></i>
-                           Development of web scrapping tools
-                        </td>
-                     </tr>
-                     <tr>
-                        <td> <i class="fa fa-dot-circle-o" aria-hidden="true" style="color:#2d7788"></i>
-                           On-going maintenance of apps with constant user flow
-                        </td>
-                     </tr>
-                     <tr>
-                        <td>
-                           <i class="fa fa-dot-circle-o" aria-hidden="true" style="color:#2d7788"></i>
-                           Optimization of the application for maximum speed and scalability
-                        </td>
-                     </tr>
-                     <tr>
-                        <td>
-                           <i class="fa fa-dot-circle-o" aria-hidden="true" style="color:#2d7788"></i>
-                           <i>Technologies: PHP, Cake, Angular, MySQL, Wordpress</i>
+                           Built web scraping tools in PHP/Python that automated data aggregation from external sources
                         </td>
                      </tr>
                   </table>
@@ -357,19 +289,7 @@
                      <tr>
                         <td>
                            <i class="fa fa-dot-circle-o" aria-hidden="true" style="color:#2d7788"></i>
-                           Creating backend and REST API for online chat portal
-                        </td>
-                     </tr>
-                     <tr>
-                        <td>
-                           <i class="fa fa-dot-circle-o" aria-hidden="true" style="color:#2d7788"></i>
-                           Creating frontend for online chat portal
-                        </td>
-                     </tr>
-                     <tr>
-                        <td>
-                           <i class="fa fa-dot-circle-o" aria-hidden="true" style="color:#2d7788"></i>
-                           <i>Technologies: PHP, Javascript, JQuery, MySQL, WebRTC</i>
+                           Implemented real-time peer-to-peer communication features using WebRTC, enabling live video/audio sessions between users
                         </td>
                      </tr>
                   </table>
@@ -377,40 +297,8 @@
                </div>
                <!--//details-->
             </div>
-            <!--//item-->
-            <div class="item">
-               <div class="meta">
-                  <div class="upper-row">
-                     <h3 class="job-title">Student Assistant</h3>
-                     <div class="time">Dec 2015–March 2016</div>
-                  </div>
-                  <!--//upper-row-->
-                  <div class="company">University of Bonn, Bonn</div>
-               </div>
-               <!--//meta-->
-               <div class="details">
-                  <table>
-                     <thead>
-                     </thead>
-                     <tbody>
-                        <tr>
-                           <td>
-                              <i class="fa fa-dot-circle-o" aria-hidden="true" style="color:#2d7788"></i>
-                              Development of custom scripts for spam prevention in MediaWiki system
-                           </td>
-                        </tr>
-                        <tr>
-                           <td>
-                              <i class="fa fa-dot-circle-o" aria-hidden="true" style="color:#2d7788"></i>
-                              <i>Technologies: PHP, Javascript, JQuery, MySQL, MediaWiki</i>
-                           </td>
-                        </tr>
-                     </tbody>
-                  </table>
-               </div>
-               <!--//details-->
-            </div>
          </section>
+
          <!--//freelance projects section-->
          <section class="section projects-section">
             <h2 class="section-title"><i class="fa fa-archive"></i>Freelance Projects</h2>
@@ -427,28 +315,7 @@
                </div>
                <!--//meta-->
                <div class="details">
-                  React Native based German language preparation app
-                  <table>
-                     <thead>
-                     </thead>
-                     <tbody>
-                        <tr>
-                           <td>
-                              <i class="fa fa-dot-circle-o" aria-hidden="true" style="color:#2d7788"></i> Development of learning options - both listening and reading modes
-                           </td>
-                        </tr>
-                        <tr>
-                           <td>
-                              <i class="fa fa-dot-circle-o" aria-hidden="true" style="color:#2d7788"></i> Multilingual (Russian / English)
-                           </td>
-                        </tr>
-                        <tr>
-                           <td>
-                              <i class="fa fa-dot-circle-o" aria-hidden="true" style="color:#2d7788"></i> Development of interactive quizzes and tutorials
-                           </td>
-                        </tr>
-                     </tbody>
-                  </table>
+                  <i class="fa fa-dot-circle-o" aria-hidden="true" style="color:#2d7788"></i> React Native German language learning app with listening/reading modes, multilingual support, and interactive quizzes
                </div>
                <!--//details-->
             </div>
@@ -463,28 +330,7 @@
                </div>
                <!--//meta-->
                <div class="details">
-                  React Native based Java 1Z0-808 exam preparation app
-                  <table>
-                     <thead>
-                     </thead>
-                     <tbody>
-                        <tr>
-                           <td>
-                              <i class="fa fa-dot-circle-o" aria-hidden="true" style="color:#2d7788"></i> Choice to select quizzes randomly or by chapter
-                           </td>
-                        </tr>
-                        <tr>
-                           <td>
-                              <i class="fa fa-dot-circle-o" aria-hidden="true" style="color:#2d7788"></i>  Option to mark questions for further review
-                           </td>
-                        </tr>
-                        <tr>
-                           <td>
-                              <i class="fa fa-dot-circle-o" aria-hidden="true" style="color:#2d7788"></i> Statistics tracking for correct and wrong answers
-                           </td>
-                        </tr>
-                     </tbody>
-                  </table>
+                  <i class="fa fa-dot-circle-o" aria-hidden="true" style="color:#2d7788"></i> React Native exam preparation app with chapter-based quizzes, question bookmarking, and progress statistics
                </div>
                <!--//details-->
             </div>
@@ -499,68 +345,10 @@
                </div>
                <!--//meta-->
                <div class="details">
-                  React Native based code-breaking game
-                  <table>
-                     <thead>
-                     </thead>
-                     <tbody>
-                        <tr>
-                           <td>
-                              <i class="fa fa-dot-circle-o" aria-hidden="true" style="color:#2d7788"></i>  2 Game modes: Competing against AI & Number finding challenge
-                           </td>
-                        </tr>
-                        <tr>
-                           <td>
-                              <i class="fa fa-dot-circle-o" aria-hidden="true" style="color:#2d7788"></i> Game features statistics tracking for wins and losses
-                           </td>
-                        </tr>
-                        <tr>
-                           <td>
-                              <i class="fa fa-dot-circle-o" aria-hidden="true" style="color:#2d7788"></i> Added badges which can be earned by winning within a predefined number of steps
-                           </td>
-                        </tr>
-                     </tbody>
-                  </table>
+                  <i class="fa fa-dot-circle-o" aria-hidden="true" style="color:#2d7788"></i> React Native code-breaking game with two modes (vs AI & number-finding challenge), statistics tracking for wins/losses, and an achievement badge system earned by solving within a predefined number of steps
                </div>
                <!--//details-->
             </div>
-
-
-            <div class="item">
-               <div class="meta">
-                  <div class="upper-row">
-                     <h3 class="project-title" style="color:#2d7788">ADHD</h3>
-                  </div>
-                  <!--//upper-row-->
-               </div>
-               <!--//meta-->
-               <div class="details">
-                  React Native and Java based mobile app for ADHD sickness 
-                  <table>
-                     <thead>
-                     </thead>
-                     <tbody>
-                        <tr>
-                           <td>
-                              <i class="fa fa-dot-circle-o" aria-hidden="true" style="color:#2d7788"></i>  Implemented the state management layer
-                           </td>
-                        </tr>
-                        <tr>
-                           <td>
-                              <i class="fa fa-dot-circle-o" aria-hidden="true" style="color:#2d7788"></i> Created several endpoints for CRUD operations
-                           </td>
-                        </tr>
-                        <tr>
-                           <td>
-                              <i class="fa fa-dot-circle-o" aria-hidden="true" style="color:#2d7788"></i> Utilized Docker to containerize the app
-                           </td>
-                        </tr>
-                     </tbody>
-                  </table>
-               </div>
-               <!--//details-->
-            </div>
-
 
             <div class="item">
                <div class="meta">
@@ -571,109 +359,7 @@
                </div>
                <!--//meta-->
                <div class="details">
-                  Django-based Telegram bot designed to scrape data from automotive websites
-                  <table>
-                     <thead>
-                     </thead>
-                     <tbody>
-                        <tr>
-                           <td>
-                              <i class="fa fa-dot-circle-o" aria-hidden="true" style="color:#2d7788"></i>  Developed the data scraping component
-                           </td>
-                        </tr>
-                        <tr>
-                           <td>
-                              <i class="fa fa-dot-circle-o" aria-hidden="true" style="color:#2d7788"></i> Utilized the long polling mechanism to ensure real-time communication
-                           </td>
-                        </tr>
-                        <tr>
-                           <td>
-                              <i class="fa fa-dot-circle-o" aria-hidden="true" style="color:#2d7788"></i> Integrated the bot with Django's ORM
-                           </td>
-                        </tr>
-                     </tbody>
-                  </table>
-               </div>
-               <!--//details-->
-            </div>
-
-
-            <div class="item">
-               <div class="meta">
-                  <div class="upper-row">
-                     <h3 class="project-title" style="color:#2d7788">My Cashier</h3>
-                  </div>
-                  <!--//upper-row-->
-               </div>
-               <!--//meta-->
-               <div class="details">
-                  Development of a Java-based desktop middleware
-                  <table>
-                     <thead>
-                     </thead>
-                     <tbody>
-                        <tr>
-                           <td>
-                              <i class="fa fa-dot-circle-o" aria-hidden="true" style="color:#2d7788"></i> Implemented the connection and data transfer mechanism using the Bluetooth
-                              protocol
-                           </td>
-                        </tr>
-                     </tbody>
-                  </table>
-               </div>
-               <!--//details-->
-            </div>
-            <div class="item">
-               <div class="meta">
-                  <div class="upper-row">
-                     <h3 class="project-title" style="color:#2d7788">Medicolonia</h3>
-                  </div>
-                  <!--//upper-row-->
-               </div>
-               <!--//meta-->
-               <div class="details">
-                  Express.js based web-app of medical system
-                  <table>
-                     <thead>
-                     </thead>
-                     <tbody>
-                        <tr>
-                           <td>
-                              <i class="fa fa-dot-circle-o" aria-hidden="true" style="color:#2d7788"></i> Developed an intuitive and user-friendly interface
-                           </td>
-                        </tr>
-                        <tr>
-                           <td>
-                              <i class="fa fa-dot-circle-o" aria-hidden="true" style="color:#2d7788"></i> Ensured that the user interface was compatible with a variety of devices
-                           </td>
-                        </tr>
-                     </tbody>
-                  </table>
-                  <p><a href="assets/files/mediRec.pdf" target="_blank">Recommendation Letter</a> </p>
-               </div>
-               <!--//details-->
-            </div>
-            <div class="item">
-               <div class="meta">
-                  <div class="upper-row">
-                     <h3 class="project-title" style="color:#2d7788">Can Staging</h3>
-                  </div>
-                  <!--//upper-row-->
-               </div>
-               <!--//meta-->
-               <div class="details">
-                  <table>
-                     <thead>
-                     </thead>
-                     <tbody>
-                        <tr>
-                           <td>
-                              <i class="fa fa-dot-circle-o" aria-hidden="true" style="color:#2d7788"></i>
-                              Express.js based web-app for detection of various cancer stages
-                           </td>
-                        </tr>
-                     </tbody>
-                  </table>
+                  <i class="fa fa-dot-circle-o" aria-hidden="true" style="color:#2d7788"></i> Django-based Telegram bot scraping automotive data via long polling; integrated with Django ORM
                </div>
                <!--//details-->
             </div>
@@ -681,6 +367,25 @@
 
             <!--//item-->
          </section>
+
+         <!--//skills-section-->
+         <section class="skills-section section">
+            <h2 class="section-title"><i class="fa fa-rocket"></i>Skills</h2>
+            <div>
+               <p><span class="job-title">Languages:</span><br/> Java 8/11/17/18, TypeScript, JavaScript (ES6+), CoffeeScript</p>
+               <p><span class="job-title">Frameworks:</span><br/> Spring Boot, Spring Security, Spring Data JPA, Spring AOP, Quarkus, Hibernate, Angular 18, React Native, Django, Play Framework, Express.js, GWT
+               </p>
+               <p><span class="job-title">Architecture:</span><br/> Microservices, RESTful API Design, GraphQL, Event-Driven Architecture, Domain-Driven Design</p>
+               <p><span class="job-title">Cloud (AWS):</span><br/> EC2, VPC, S3, IAM, RDS, DynamoDB</p>
+               <p><span class="job-title">CI/CD & DevOps:</span><br/>Docker, Jenkins, GitLab CI/CD, Bitbucket Pipelines, CircleCI, Bamboo, SonarQube</p>
+               <p><span class="job-title">Databases:</span><br/> PostgreSQL, MySQL, MongoDB, DB2, Firebase, SQL</p>
+               <p><span class="job-title">Testing:</span><br/> JUnit 5, Mockito, Jest, TDD, Integration Testing</p>
+               <p><span class="job-title">Frontend:</span><br/> React, Angular, Ajax, jQuery, Bootstrap, SCSS/SASS</p>
+            </div>
+         </section>
+         
+
+
 
 
          <!--//certifications section-->
@@ -749,168 +454,6 @@
                   </table>
                </div>
             </div>
-         </section>
-         <!--//courses section-->
-         <section class="section experiences-section">
-            <h2 class="section-title"><i class="fa fa-graduation-cap"></i>Courses</h2>
-            
-            <div class="item">
-               <div class="meta">
-                  <div class="upper-row">
-                     <h3 class="job-title">HackerRank</h3>
-                  </div>
-               </div>
-               <div class="details">
-                  <table style="width: 100%;">
-                     <thead>
-                     </thead>
-                     <tbody>
-                        <tr>
-                           <td>
-                              <i class="fa fa-dot-circle-o" aria-hidden="true" style="color:#2d7788"></i>                                 
-                              <a href="./assets/files/certificates/udemy/Hackerank.pdf" target="_blank" style="margin-left:5px;">    
-                                 Software Engineer Certification
-                              </a>
-                           </td>
-                        </tr>
-                     </tbody>
-                  </table>
-               </div>
-			   </div>
-            <div class="item">
-               <div class="meta">
-                  <div class="upper-row">
-                    <h3 class="job-title">Udemy</h3>
-                  </div>
-               </div>
-               <div class="details">
-                  <table style="width: 100%;">
-                     <thead>
-                     </thead>
-                     <tbody>
-
-                        <!-- <tr>
-                           <td>
-                              <i class="fa fa-dot-circle-o" aria-hidden="true" style="color:#2d7788"></i>                                 
-                              <a href="https://www.udemy.com/course/spring-framework-5-beginner-to-guru" target="_blank" style="margin-left:5px;">    
-                                 Spring Framework 5 (Coming Soon)
-                              </a>
-                           </td>
-                        </tr>
-
-                        <tr>
-                           <td>
-                              <i class="fa fa-dot-circle-o" aria-hidden="true" style="color:#2d7788"></i>                                 
-                              <a href="https://www.udemy.com/course/docker-mastery" target="_blank" style="margin-left:5px;">    
-                                 Docker Mastery (Coming Soon)
-                              </a>
-                           </td>
-                        </tr> -->
-
-                        <tr>
-                           <td>
-                              <i class="fa fa-dot-circle-o" aria-hidden="true" style="color:#2d7788"></i>                                 
-                              <a href="https://www.udemy.com/certificate/UC-77c03c45-dcd7-41a6-8443-a60bcb4dbe70/" target="_blank" style="margin-left:5px;">    
-                                 Multithreading and Concurrency
-                              </a>
-                           </td>
-                        </tr>
-
-                        <tr>
-                           <td>
-                              <i class="fa fa-dot-circle-o" aria-hidden="true" style="color:#2d7788"></i>                                 
-                              <a href="https://udemy.com/certificate/UC-6af6defc-2cfc-4d0d-9eca-c0c0875a53ce/" target="_blank" style="margin-left:5px;">    
-                                Functional Programming
-                              </a>
-                           </td>
-                        </tr>
-
-                        <tr>
-                           <td>
-                              <i class="fa fa-dot-circle-o" aria-hidden="true" style="color:#2d7788"></i>                                 
-                              <a href="https://udemy.com/certificate/UC-67bd0537-6f9c-4b2f-a16b-c317ce8ffee9/" target="_blank" style="margin-left:5px;">    
-                                Oracle Java Certification Course
-                              </a>
-                           </td>
-                        </tr>
-                        <tr>
-                           <td>
-                              <i class="fa fa-dot-circle-o" aria-hidden="true" style="color:#2d7788"></i>                                 
-                              <a href="https://udemy.com/certificate/UC-8096e2c0-c012-4bd1-b0d2-c4fc3117d07c/" target="_blank" style="margin-left:5px;">    
-                                The Coding Interview Bootcamp in Java
-                              </a>
-                           </td>
-                        </tr>
-                        <tr>
-                           <td>
-                              <i class="fa fa-dot-circle-o" aria-hidden="true" style="color:#2d7788"></i>                                 
-                              <a href="https://udemy.com/certificate/UC-c04e91a8-3af9-45b9-a8da-ed0b2a8c3022/" target="_blank" style="margin-left:5px;">    
-                                Algorithms and Data Structures in Java
-                              </a>
-                           </td>
-                        </tr>
-                        <tr>
-                           <td>
-                              <i class="fa fa-dot-circle-o" aria-hidden="true" style="color:#2d7788"></i>                                 
-                              <a href="https://udemy.com/certificate/UC-e9720113-8f2b-4fbc-9966-22a57cb6a513/" target="_blank" style="margin-left:5px;">    
-                                 Java Programming: Step by Step from A to Z
-                              </a>
-                           </td>
-                        </tr>
-                        <tr>
-                           <td>
-                              <i class="fa fa-dot-circle-o" aria-hidden="true" style="color:#2d7788"></i>                                 
-                              <a href="https://udemy.com/certificate/UC-dd9316f8-9dbe-4e5b-92db-66542f1c1bc5/" style="margin-left:5px;" target="_blank" > 
-                                   Starting with Quarkus
-                              </a>
-                           </td>
-                        </tr>
-                        <tr>
-                           <td>
-                              <i class="fa fa-dot-circle-o" aria-hidden="true" style="color:#2d7788"></i>  
-                              <a href="https://www.udemy.com/certificate/UC-f80aada9-87fe-43fd-8f1c-9c49f460f298/" target="_blank" style="margin-left:5px;"> 
-                                 Relational Databases with Quarkus   
-                              </a>                               
-                           </td>
-                        </tr>
-                        <tr>
-                           <td>
-                              <i class="fa fa-dot-circle-o" aria-hidden="true" style="color:#2d7788"></i>                                 
-                              <a href="https://udemy.com/certificate/UC-1c4331cb-e833-42bb-9a66-8f379c4e603d/" target="_blank" style="margin-left:5px;">    
-                                 Microservices with Quarkus
-                              </a>
-                           </td>
-                        </tr>
-                     </tbody>
-                  </table>
-               </div>
-			   </div>
-
-
-
-            <div class="item">
-               <div class="meta">
-                  <div class="upper-row">
-                     <h3 class="job-title">IBM (edX)</h3>
-                  </div>
-               </div>
-               <div class="details">
-                  <table style="width: 100%;">
-                     <thead>
-                     </thead>
-                     <tbody>
-                        <tr>
-                           <td>
-                              <i class="fa fa-dot-circle-o" aria-hidden="true" style="color:#2d7788"></i>                                 
-                              <a href="https://courses.edx.org/certificates/f3826ebbbdc24fcf83b334998418b362" target="_blank" style="margin-left:5px;">    
-                                 Python Basics for Data Science  
-                              </a>
-                           </td>
-                        </tr>
-                     </tbody>
-                  </table>
-               </div>
-			   </div>
          </section>
 
 
