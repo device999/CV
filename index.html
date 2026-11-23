@@ -1,471 +1,1023 @@
-<!DOCTYPE html>
-<!--[if IE 8]> 
-<html lang="en" class="ie8">
-   <![endif]-->
-<!--[if IE 9]> 
-   <html lang="en" class="ie9">
-      <![endif]-->
-<!--[if !IE]><!-->
-<html lang="en">
-<!--<![endif]-->
-
-<head>
-   <title>My Resume</title>
-   <!-- Meta -->
-   <meta charset="utf-8">
-   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <meta name="description" content="Personal CV">
-   <meta name="author" content="Rahimbayli Sattar">
-   <link rel="shortcut icon" href="Lite-Icon-icon.png">
-   <link
-      href='https://fonts.googleapis.com/css?family=Roboto:400,500,400italic,300italic,300,500italic,700,700italic,900,900italic'
-      rel='stylesheet' type='text/css'>
-   <!-- Global CSS -->
-   <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">
-   <link rel="stylesheet" href="assets/css/main-style.css">
-   <!-- Plugins CSS -->
-   <link rel="stylesheet" href="assets/plugins/font-awesome/css/font-awesome.css">
-   <link id="theme-style" rel="stylesheet" href="assets/css/styles.css">
-</head>
-
-<body>
-   <div class="wrapper">
-      <div class="sidebar-wrapper">
-         <div class="profile-container">
-            <img class="profile" src="assets/images/profile.png" alt="" style="width: 160px; height:160px;border-radius: 100%;" />
-            <h1 class="name">Rahimbayli Sattar</h1>
-            <h3 class="tagline">Software Developer</h3>
-            <br />
-             <a href="assets/files/CV.pdf" target="_blank">Download PDF</a>
-         </div>
-         <!--//profile-container-->
-         <div class="contact-container container-block">
-            <ul class="list-unstyled contact-list">
-               <li class="email"><i class="fa fa-envelope"></i><a
-                     href="mailto: sattari4@hotmail.com">sattari4@hotmail.com</a></li>
-               <li class="phone"><i class="fa fa-send"></i><a href="https://t.me/rsattar93">Sattar Rahimbayli</a></li>
-               <li class="linkedin"><i class="fa fa-linkedin"></i><a
-                     href="https://www.linkedin.com/in/sattar-rahimbayli-953784b6" target="_blank">Sattar Rahimbayli</a>
-               </li>
-               <li class="github"><i class="fa fa-github"></i><a href="https://github.com/device999"
-                     target="_blank">device999</a></li>               
-               <li class="twitter"><i class="fa fa-android"></i><a href="https://play.google.com/store/apps/dev?id=8233666142431832771">Sattar Rahimbayli</a></li>
-            </ul>
-         </div>
-         <!--//contact-container-->
-         <div class="education-container container-block">
-            <h2 class="container-block-title">Education</h2>
-            <div class="item">
-               <h4 class="degree">MSc in Computer Science</h4>
-               <h5 class="meta">University of Bonn</h5>
-               <div class="time">2014 - 2018</div>
+<!doctype html>
+<html lang="en" class="web">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
+        <title>Sattar Rahimbayli – Software Developer</title>
+        <meta
+            name="description"
+            content="CV / Lebenslauf – Sattar Rahimbayli, Software Developer / Softwareentwickler"
+        />
+        <link rel="alternate" hreflang="en" href="https://device999.github.io/CV/?lang=en" />
+        <link rel="alternate" hreflang="de" href="https://device999.github.io/CV/?lang=de" />
+        <style>
+            :root {
+                --ink: #1c2430;
+                --muted: #5b6675;
+                --accent: #0b5cad;
+                --line: #d9dee5;
+                --bg: #fff;
+                --soft: #f4f6f9;
+            }
+            @media (prefers-color-scheme: dark) {
+                :root.web {
+                    --ink: #e7ebf0;
+                    --muted: #9aa5b4;
+                    --accent: #6aa9ec;
+                    --line: #2b3441;
+                    --bg: #12161c;
+                    --soft: #1a2029;
+                }
+            }
+            * {
+                box-sizing: border-box;
+            }
+            html {
+                font-family:
+                    Inter,
+                    "Segoe UI",
+                    system-ui,
+                    -apple-system,
+                    Arial,
+                    sans-serif;
+                color: var(--ink);
+                background: var(--bg);
+                font-size: 15px;
+                line-height: 1.5;
+            }
+            body {
+                margin: 0;
+            }
+            .page {
+                max-width: 860px;
+                margin: 0 auto;
+                padding: 40px 32px 56px;
+            }
+            a.ic {
+                display: inline-flex;
+                line-height: 0;
+            }
+            a {
+                color: var(--accent);
+                text-decoration: none;
+            }
+            a:hover {
+                text-decoration: underline;
+            }
+            header {
+                border-bottom: 2px solid var(--accent);
+                padding-bottom: 14px;
+                margin-bottom: 6px;
+            }
+            h1 {
+                font-size: 2.1rem;
+                line-height: 1.15;
+                margin: 0;
+                letter-spacing: -0.01em;
+            }
+            .role {
+                font-size: 1.1rem;
+                color: var(--accent);
+                font-weight: 600;
+                margin: 2px 0 10px;
+            }
+            .contact {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 6px 14px;
+                margin: 0;
+                padding: 0;
+                list-style: none;
+                font-size: 0.88rem;
+            }
+            h2 {
+                font-size: 0.82rem;
+                text-transform: uppercase;
+                letter-spacing: 0.12em;
+                color: var(--accent);
+                margin: 0 0 8px;
+                padding-bottom: 4px;
+                border-bottom: 1px solid var(--line);
+            }
+            section {
+                margin-top: 22px;
+            }
+            section h2 {
+                break-after: avoid;
+            }
+            .skills,
+            .langs,
+            .two {
+                break-inside: avoid;
+            }
+            h3 {
+                font-size: 1rem;
+                margin: 0;
+            }
+            .job {
+                margin-bottom: 16px;
+                break-inside: avoid;
+            }
+            .job-head {
+                display: flex;
+                justify-content: space-between;
+                gap: 12px;
+                align-items: baseline;
+            }
+            .dates {
+                color: var(--muted);
+                font-size: 0.86rem;
+                white-space: nowrap;
+            }
+            .org {
+                margin: 0 0 4px;
+                color: var(--muted);
+                font-size: 0.92rem;
+            }
+            ul {
+                margin: 4px 0 0;
+                padding-left: 1.15rem;
+            }
+            li {
+                margin: 2px 0;
+            }
+            .letter {
+                margin: 4px 0 0;
+                font-size: 0.85rem;
+            }
+            .profile {
+                margin: 0;
+            }
+            .skills {
+                margin: 0;
+            }
+            .skills .row {
+                display: grid;
+                grid-template-columns: 150px 1fr;
+                gap: 10px;
+                padding: 3px 0;
+            }
+            .skills dt {
+                font-weight: 600;
+            }
+            .skills dd {
+                margin: 0;
+            }
+            .edu {
+                margin-bottom: 8px;
+            }
+            .proj {
+                margin-bottom: 8px;
+                break-inside: avoid;
+            }
+            .proj p {
+                margin: 0;
+            }
+            .two {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 24px;
+            }
+            .muted {
+                color: var(--muted);
+                font-size: 0.9rem;
+            }
+            .langs {
+                list-style: none;
+                padding: 0;
+                display: flex;
+                flex-wrap: wrap;
+                gap: 4px 24px;
+            }
+            .toolbar {
+                display: flex;
+                justify-content: flex-end;
+                gap: 10px;
+                align-items: center;
+                margin-bottom: 18px;
+            }
+            .switch {
+                display: inline-flex;
+                border: 1px solid var(--line);
+                border-radius: 8px;
+                overflow: hidden;
+            }
+            .switch button {
+                font: inherit;
+                font-size: 0.85rem;
+                padding: 6px 14px;
+                border: 0;
+                background: transparent;
+                color: var(--ink);
+                cursor: pointer;
+            }
+            .switch button[aria-pressed="true"] {
+                background: var(--accent);
+                color: #fff;
+            }
+            .btn {
+                font-size: 0.85rem;
+                padding: 6px 14px;
+                border: 1px solid var(--accent);
+                border-radius: 8px;
+                color: var(--accent);
+            }
+            .btn:hover {
+                background: var(--accent);
+                color: #fff;
+                text-decoration: none;
+            }
+            .foot {
+                margin-top: 28px;
+                font-size: 0.8rem;
+                color: var(--muted);
+            }
+            [data-show] {
+                display: none;
+            }
+            html[lang="en"] [data-show="en"],
+            html[lang="de"] [data-show="de"] {
+                display: block;
+            }
+            @media (max-width: 640px) {
+                .page {
+                    padding: 24px 18px;
+                }
+                .skills .row {
+                    grid-template-columns: 1fr;
+                    gap: 0;
+                }
+                .two {
+                    grid-template-columns: 1fr;
+                }
+                .job-head {
+                    flex-direction: column;
+                    gap: 0;
+                }
+            }
+            @page {
+                size: A4;
+                margin: 14mm 15mm;
+            }
+            @media print {
+                html {
+                    font-size: 10.2px;
+                    background: #fff;
+                }
+                :root {
+                    --bg: #fff;
+                }
+                .page {
+                    max-width: none;
+                    padding: 0;
+                }
+                .toolbar {
+                    display: none;
+                }
+                section {
+                    margin-top: 13px;
+                }
+                .job {
+                    margin-bottom: 9px;
+                }
+                a {
+                    color: var(--accent);
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="page">
+            <div class="toolbar">
+                <div class="switch" role="group" aria-label="Language / Sprache">
+                    <button type="button" data-set="en" aria-pressed="false">EN</button
+                    ><button type="button" data-set="de" aria-pressed="false">DE</button>
+                </div>
+                <a class="btn" id="pdf" target="_blank" href="assets/files/CV_EN.pdf">Download PDF</a>
             </div>
-            <!--//item-->
-            <div class="item">
-               <h4 class="degree">BSc in Computer Science</h4>
-               <h5 class="meta">Azerbaijan State Oil Academy</h5>
-               <div class="time">2010 - 2014</div>
+            <div data-show="en">
+                <header>
+                    <h1>Sattar Rahimbayli</h1>
+                    <p class="role">Software Developer</p>
+                    <ul class="contact">
+                        <li>
+                            <a class="ic" href="mailto:sattari4@hotmail.com" aria-label="Email" title="Email"
+                                ><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true">
+                                    <rect
+                                        x="3"
+                                        y="5"
+                                        width="18"
+                                        height="14"
+                                        rx="2"
+                                        fill="none"
+                                        stroke="currentColor"
+                                        stroke-width="1.8"
+                                    />
+                                    <path
+                                        d="M3.5 7.5 12 13l8.5-5.5"
+                                        fill="none"
+                                        stroke="currentColor"
+                                        stroke-width="1.8"
+                                        stroke-linejoin="round"
+                                    />
+                                    </svg></a>
+                        </li>
+                        <li>
+                            <a
+                                class="ic"
+                                href="https://www.linkedin.com/in/sattar-rahimbayli-953784b6"
+                                aria-label="LinkedIn"
+                                title="LinkedIn"
+                                ><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true">
+                                    <rect
+                                        x="3"
+                                        y="3"
+                                        width="18"
+                                        height="18"
+                                        rx="3"
+                                        fill="none"
+                                        stroke="currentColor"
+                                        stroke-width="1.8"
+                                    />
+                                    <circle cx="8" cy="8.3" r="1.25" fill="currentColor" />
+                                    <rect x="7" y="10.8" width="2" height="6.2" fill="currentColor" />
+                                    <path
+                                        d="M11.5 10.8h1.9v.9c.5-.7 1.3-1.1 2.3-1.1 1.8 0 2.6 1.1 2.6 3V17h-2v-3c0-.9-.4-1.4-1.2-1.4s-1.6.6-1.6 1.5V17h-2z"
+                                        fill="currentColor"
+                                    /></svg></a>
+                        </li>
+                        <li>
+                            <a
+                                class="ic"
+                                href="https://play.google.com/store/apps/dev?id=8233666142431832771"
+                                aria-label="Google Play"
+                                title="Google Play"
+                                target="_blank"
+                                ><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true">
+                                    <rect
+                                        x="3"
+                                        y="3"
+                                        width="18"
+                                        height="18"
+                                        rx="3.5"
+                                        fill="none"
+                                        stroke="currentColor"
+                                        stroke-width="1.8"
+                                    />
+                                    <path d="M10 8v8l6.5-4z" fill="currentColor" /></svg></a>
+                        </li>
+                    </ul>
+                </header>
+                <section class="">
+                    <h2>Experience</h2>
+                    <article class="job">
+                        <div class="job-head">
+                            <h3>Software Developer</h3>
+                            <span class="dates">Apr 2022 – present</span>
+                        </div>
+                        <p class="org">Dedalus HealthCare GmbH, Bonn</p>
+                        <ul>
+                            <li>
+                                Designed and built an online front-desk and waiting-room management system with Spring
+                                Boot and Angular 18, integrated with Grafana dashboards for real-time operational
+                                monitoring.
+                            </li>
+                            <li>
+                                Architected and delivered a high-throughput REST API on Quarkus, integrated with the
+                                Camunda BPM engine to orchestrate clinical workflows.
+                            </li>
+                            <li>
+                                Led the adoption of Docker-based deployments across all owned services, streamlining
+                                releases and reducing environment inconsistencies.
+                            </li>
+                        </ul>
+                        <p class="letter">
+                            <a target="_blank" href="assets/files/DedalusRec.pdf">Recommendation letter (German)</a
+                            >
+                        </p>
+                    </article>
+                    <article class="job">
+                        <div class="job-head">
+                            <h3>Software Developer</h3>
+                            <span class="dates">Sep 2020 – Mar 2022</span>
+                        </div>
+                        <p class="org">Universitätsklinikum Bonn</p>
+                        <ul>
+                            <li>
+                                Built an Angular-based FHIR bundle visualization and search tool that helps clinical
+                                researchers navigate complex HL7/FHIR datasets.
+                            </li>
+                            <li>
+                                Developed ETL modules that transform heterogeneous medical data into standardized FHIR
+                                resources, improving interoperability between hospital information systems.
+                            </li>
+                            <li>Delivered a patient portal (Spring Boot, Angular) with role-based access control.</li>
+                            <li>Maintained unit test coverage of backend services with JUnit and Mockito.</li>
+                        </ul>
+                        <p class="letter">
+                            <a target="_blank" href="assets/files/UKBRec.pdf">Recommendation letter (German)</a
+                            >
+                        </p>
+                    </article>
+                    <article class="job">
+                        <div class="job-head">
+                            <h3>Software Developer</h3>
+                            <span class="dates">Apr 2019 – Aug 2020</span>
+                        </div>
+                        <p class="org">CodeFrog IT GmbH, Braunschweig</p>
+                        <ul>
+                            <li>
+                                Built a cross-platform trading app in React Native with a Spring Boot backend, handling
+                                live stock data.
+                            </li>
+                            <li>
+                                Engineered a vehicle delivery management platform with Angular and Spring Boot;
+                                introduced a Bamboo-based CI/CD pipeline.
+                            </li>
+                            <li>
+                                Implemented Redux state management and RxJS reactive patterns for complex UI data flows.
+                            </li>
+                        </ul>
+                        <p class="letter">
+                            <a href="assets/files/codefrogRec.pdf" target="_blank">Recommendation letter (German)</a
+                            >
+                        </p>
+                    </article>
+                    <article class="job">
+                        <div class="job-head">
+                            <h3>Software Developer</h3>
+                            <span class="dates">Jun 2017 – Mar 2019</span>
+                        </div>
+                        <p class="org">Peter L. Reichertz Institut für Medizinische Informatik, Braunschweig</p>
+                        <ul>
+                            <li>
+                                Developed a rule-based pay-for-performance reward system with Play Framework to support
+                                incentive models in clinical trials.
+                            </li>
+                            <li>
+                                Extended a Java backend of a clinical trial management system (CTMS) with new modules
+                                that reduced manual data entry.
+                            </li>
+                            <li>Administered deployment servers, databases and CI/CD pipelines.</li>
+                        </ul>
+                    </article>
+                    <article class="job">
+                        <div class="job-head">
+                            <h3>Web Developer</h3>
+                            <span class="dates">Aug 2016 – Jun 2017</span>
+                        </div>
+                        <p class="org">Advanced Dynamics, Cologne</p>
+                        <ul>
+                            <li>Developed an internal time-management calendar in Angular.</li>
+                            <li>
+                                Built web-scraping tools in PHP and Python that automated data aggregation from external
+                                sources.
+                            </li>
+                        </ul>
+                    </article>
+                    <article class="job">
+                        <div class="job-head">
+                            <h3>Backend Developer (internship)</h3>
+                            <span class="dates">May 2016 – Oct 2016</span>
+                        </div>
+                        <p class="org">Brāv Conflict Resolution, Michigan City, Indiana, USA</p>
+                        <ul>
+                            <li>Implemented real-time peer-to-peer video and audio communication with WebRTC.</li>
+                        </ul>
+                        <p class="letter">
+                            <a href="assets/files/bravRec.pdf" target="_blank">Recommendation letter</a>
+                        </p>
+                    </article>
+                </section>
+                <section class="">
+                    <h2>Technical Skills</h2>
+                    <dl class="skills">
+                        <div class="row">
+                            <dt>Languages</dt>
+                            <dd>Java 8/11/17/18, TypeScript, JavaScript (ES6+), CoffeeScript</dd>
+                        </div>
+                        <div class="row">
+                            <dt>Frameworks</dt>
+                            <dd>
+                                Spring Boot, Spring Security, Spring Data JPA, Spring AOP, Quarkus, Hibernate, Angular
+                                18, React Native, Django, Play Framework, Express.js, GWT
+                            </dd>
+                        </div>
+                        <div class="row">
+                            <dt>Frontend</dt>
+                            <dd>Angular, React, Ajax, jQuery, Bootstrap, SCSS/SASS</dd>
+                        </div>
+                        <div class="row">
+                            <dt>Architecture</dt>
+                            <dd>
+                                Microservices, RESTful API Design, GraphQL, Event-Driven Architecture, Domain-Driven
+                                Design
+                            </dd>
+                        </div>
+                        <div class="row">
+                            <dt>Cloud (AWS)</dt>
+                            <dd>EC2, VPC, S3, IAM, RDS, DynamoDB</dd>
+                        </div>
+                        <div class="row">
+                            <dt>CI/CD &amp; DevOps</dt>
+                            <dd>Docker, Jenkins, GitLab CI/CD, Bitbucket Pipelines, CircleCI, Bamboo, SonarQube</dd>
+                        </div>
+                        <div class="row">
+                            <dt>Databases</dt>
+                            <dd>PostgreSQL, MySQL, MongoDB, DB2, Firebase, SQL</dd>
+                        </div>
+                        <div class="row">
+                            <dt>Testing</dt>
+                            <dd>JUnit 5, Mockito, Jest, TDD, Integration Testing</dd>
+                        </div>
+                    </dl>
+                </section>
+                <section class="">
+                    <h2>Education</h2>
+                    <div class="edu">
+                        <div class="job-head">
+                            <h3>MSc Computer Science</h3>
+                            <span class="dates">2014 – 2018</span>
+                        </div>
+                        <p class="org">University of Bonn</p>
+                    </div>
+                    <div class="edu">
+                        <div class="job-head">
+                            <h3>BSc Computer Science</h3>
+                            <span class="dates">2010 – 2014</span>
+                        </div>
+                        <p class="org">Azerbaijan State Oil Academy</p>
+                    </div>
+                </section>
+                <section class="">
+                    <h2>Freelance Projects</h2>
+                    <div class="proj">
+                        <h3><a href="https://e4sv.short.gy/de-qrcode">DiscoverDE</a></h3>
+                        <p>
+                            React Native app for learning German, with listening and reading modes, multilingual support
+                            and interactive quizzes.
+                        </p>
+                    </div>
+                    <div class="proj">
+                        <h3><a href="https://e4sv.short.gy/java-1z0808">Java-1Z0-808</a></h3>
+                        <p>
+                            React Native exam-preparation app with chapter-based quizzes, question bookmarking and
+                            progress statistics.
+                        </p>
+                    </div>
+                    <div class="proj">
+                        <h3>
+                            <a href="https://play.google.com/store/apps/details?id=com.device999.BullsAndCows"
+                                >Bulls &amp; Cows</a
+                            >
+                        </h3>
+                        <p>
+                            React Native code-breaking game with two modes (vs. AI and number-finding), win/loss
+                            statistics and achievement badges for solving within a set number of steps.
+                        </p>
+                    </div>
+                    <div class="proj">
+                        <h3>Graiger Scrapper</h3>
+                        <p>
+                            Django-based Telegram bot that scrapes automotive data via long polling, integrated with the
+                            Django ORM.
+                        </p>
+                    </div>
+                </section>
+                <div class="two">
+                    <section class="">
+                        <h2>Publication</h2>
+                        <p>
+                            <a href="http://ebooks.iospress.nl/volumearticle/51388"
+                                >Pay for Performance in Electronic Data Capture for Clinical Trials and Medical
+                                Registries</a
+                            ><br /><span class="muted"
+                                ><a
+                                    href="http://ebooks.iospress.nl/volume/ict-for-health-science-research-proceedings-of-the-efmi-2019-special-topic-conference-7-10-april-2019-hanover-germany"
+                                    >ICT for Health Science Research, EFMI 2019, IOS Press Ebooks</a
+                                ></span
+                            >
+                        </p>
+                    </section>
+                    <section class="">
+                        <h2>Certification</h2>
+                        <p>
+                            <a
+                                href="https://catalog-education.oracle.com/pls/certview/sharebadge?id=4DFA7F09A2EAD10953BA53E9F64103429FB1A588287BFE288982670829A50AE0"
+                                >Oracle Certified Associate, Java SE 8 Programmer</a
+                            ><br />
+                            <span class="muted">
+                                <a href="assets/files/certificates/oracle_associate.pdf" target="_blank">PDF</a>
+                            </span>
+                        </p>
+                    </section>
+                </div>
+                <section class="">
+                    <h2>Languages</h2>
+                    <ul class="langs">
+                        <li><strong>Russian</strong> <span class="muted">Native</span></li>
+                        <li><strong>Azerbaijani</strong> <span class="muted">Native</span></li>
+                        <li><strong>English</strong> <span class="muted">Professional</span></li>
+                        <li><strong>Turkish</strong> <span class="muted">Professional</span></li>
+                        <li><strong>German</strong> <span class="muted">Intermediate</span></li>
+                    </ul>
+                </section>
             </div>
-            <!--//item-->
-         </div>
-         <!--//education-container-->
-         <div class="languages-container container-block">
-            <h2 class="container-block-title">Languages</h2>
-            <ul class="list-unstyled interests-list">
-               <li>Russian <span class="lang-desc">(Native)</span></li>
-               <li>Azerbaijani <span class="lang-desc">(Native)</span></li>
-               <li>Turkish <span class="lang-desc">(Professional)</span></li>
-               <li>English <span class="lang-desc">(Professional)</span></li>
-               <li>German <span class="lang-desc">(Intermediate)</span></li>
-            </ul>
-         </div>
-         <!--//interests-->
-         <!-- <div class="interests-container container-block">
-            <h2 class="container-block-title">Interests</h2>
-            <ul class="list-unstyled interests-list">
-               <li>Medical Informatics</li>
-               <li>Machine Learning</li>
-            </ul>
-         </div> -->
-         <!--//interests-->
-      </div>
-      <!--//sidebar-wrapper-->
-      <div class="main-wrapper">
-         <!--//experiences-section-->
-         <section class="section experiences-section">
-            <h2 class="section-title"><i class="fa fa-briefcase"></i>Experiences</h2>
-            
-            <div class="item">
-               <div class="meta">
-                  <div class="upper-row">
-                     <h3 class="job-title">Software Developer</h3>
-                     <div class="time">April 2022 - now</div>
-                  </div>
-                  <div class="company">Dedalus HealthCare GmbH, Bonn</div>
-               </div>
-               <div class="details">
-                  <table>
-                     <tr>
-                        <td>
-                           <i class="fa fa-dot-circle-o" aria-hidden="true" style="color:#2d7788"></i>
-                           Designed and built an online front-desk and waiting-room management system using Spring Boot and Angular 18, integrated with Grafana dashboards for real-time operational monitoring
-                        </td>
-                     </tr>
-                     <tr>
-                        <td>
-                           <i class="fa fa-dot-circle-o" aria-hidden="true" style="color:#2d7788"></i>
-                           Architected and delivered a high-throughput REST API on Quarkus integrated with the Camunda BPM Engine, enabling workflow orchestration for clinical processes
-                        </td>
-                     </tr>
-                     <tr>
-                        <td>
-                           <i class="fa fa-dot-circle-o" aria-hidden="true" style="color:#2d7788"></i>
-                           Led adoption of containerized deployments via Docker across all owned services, streamlining release cycles and reducing environment inconsistencies
-                        </td>
-                     </tr>
-                  </table>
-                  <p><a href="assets/files/DedalusRec.pdf" target="_blank">Recommendation Letter (in German)</a> </p>
-               </div>
+            <div data-show="de">
+                <header>
+                    <h1>Sattar Rahimbayli</h1>
+                    <p class="role">Softwareentwickler</p>
+                    <ul class="contact">
+                        <li>
+                            <a class="ic" href="mailto:sattari4@hotmail.com" aria-label="Email" title="Email"
+                                ><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true">
+                                    <rect
+                                        x="3"
+                                        y="5"
+                                        width="18"
+                                        height="14"
+                                        rx="2"
+                                        fill="none"
+                                        stroke="currentColor"
+                                        stroke-width="1.8"
+                                    />
+                                    <path
+                                        d="M3.5 7.5 12 13l8.5-5.5"
+                                        fill="none"
+                                        stroke="currentColor"
+                                        stroke-width="1.8"
+                                        stroke-linejoin="round"
+                                    />
+                                </svg></a>
+                        </li>
+                        <li>
+                            <a
+                                class="ic"
+                                href="https://www.linkedin.com/in/sattar-rahimbayli-953784b6"
+                                aria-label="LinkedIn"
+                                title="LinkedIn"
+                                ><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true">
+                                    <rect
+                                        x="3"
+                                        y="3"
+                                        width="18"
+                                        height="18"
+                                        rx="3"
+                                        fill="none"
+                                        stroke="currentColor"
+                                        stroke-width="1.8"
+                                    />
+                                    <circle cx="8" cy="8.3" r="1.25" fill="currentColor" />
+                                    <rect x="7" y="10.8" width="2" height="6.2" fill="currentColor" />
+                                    <path
+                                        d="M11.5 10.8h1.9v.9c.5-.7 1.3-1.1 2.3-1.1 1.8 0 2.6 1.1 2.6 3V17h-2v-3c0-.9-.4-1.4-1.2-1.4s-1.6.6-1.6 1.5V17h-2z"
+                                        fill="currentColor"
+                                    />
+                                </svg>
+                                </a>
+                        </li>
+
+
+                        <li>
+                            <a
+                                class="ic"
+                                href="https://play.google.com/store/apps/dev?id=8233666142431832771"
+                                aria-label="Google Play"
+                                title="Google Play"
+                                ><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true">
+                                    <rect
+                                        x="3"
+                                        y="3"
+                                        width="18"
+                                        height="18"
+                                        rx="3.5"
+                                        fill="none"
+                                        stroke="currentColor"
+                                        stroke-width="1.8"
+                                    />
+                                    <path d="M10 8v8l6.5-4z" fill="currentColor" />
+                                </svg></a>
+                        </li>
+                    </ul>
+                </header>
+                <section class="">
+                    <h2>Profil</h2>
+                    <p class="profile">
+                        Full-Stack-Softwareentwickler (M.Sc. Informatik, Universität Bonn) mit über 9 Jahren
+                        Berufserfahrung in der Entwicklung backendlastiger Web- und Mobile-Anwendungen mit Java, Spring
+                        Boot, Quarkus und Angular. Schwerpunkt Healthcare-IT: HL7/FHIR-Interoperabilität,
+                        Automatisierung klinischer Workflows und Patientenportale. Praxiserfahrung mit CI/CD, Docker und
+                        AWS; Autor einer Konferenzpublikation (EFMI 2019).
+                    </p>
+                </section>
+                <section class="">
+                    <h2>Berufserfahrung</h2>
+                    <article class="job">
+                        <div class="job-head">
+                            <h3>Softwareentwickler</h3>
+                            <span class="dates">Apr. 2022 – heute</span>
+                        </div>
+                        <p class="org">Dedalus HealthCare GmbH, Bonn</p>
+                        <ul>
+                            <li>
+                                Konzeption und Entwicklung eines Online-Systems für Empfang und Wartezimmer-Management
+                                mit Spring Boot und Angular 18, angebunden an Grafana-Dashboards für das
+                                Echtzeit-Monitoring des Betriebs.
+                            </li>
+                            <li>
+                                Architektur und Umsetzung einer hochperformanten REST-API auf Basis von Quarkus,
+                                integriert mit der Camunda-BPM-Engine zur Orchestrierung klinischer Prozesse.
+                            </li>
+                            <li>
+                                Führende Rolle bei der Einführung von Docker-Deployments für alle eigenen Services;
+                                schnellere Releases und weniger Umgebungsunterschiede.
+                            </li>
+                        </ul>
+                        <p class="letter">
+                            <a href="assets/files/DedalusRec.pdf" target="_blank">Empfehlungsschreiben</a
+                            >
+                        </p>
+                    </article>
+                    <article class="job">
+                        <div class="job-head">
+                            <h3>Softwareentwickler</h3>
+                            <span class="dates">Sep. 2020 – März 2022</span>
+                        </div>
+                        <p class="org">Universitätsklinikum Bonn</p>
+                        <ul>
+                            <li>
+                                Entwicklung einer Angular-Anwendung zur Visualisierung und Suche von FHIR-Bundles, mit
+                                der Forschende komplexe HL7/FHIR-Datensätze effizienter durchsuchen.
+                            </li>
+                            <li>
+                                Entwicklung von ETL-Modulen zur Überführung heterogener medizinischer Daten in
+                                standardisierte FHIR-Ressourcen; bessere Interoperabilität zwischen
+                                Krankenhausinformationssystemen.
+                            </li>
+                            <li>
+                                Umsetzung eines Patientenportals (Spring Boot, Angular) mit rollenbasierter
+                                Zugriffskontrolle.
+                            </li>
+                            <li>Pflege der Unit-Test-Abdeckung der Backend-Services mit JUnit und Mockito.</li>
+                        </ul>
+                        <p class="letter">
+                            <a href="assets/files/UKBRec.pdf" target="_blank">Empfehlungsschreiben</a>
+                        </p>
+                    </article>
+                    <article class="job">
+                        <div class="job-head">
+                            <h3>Softwareentwickler</h3>
+                            <span class="dates">Apr. 2019 – Aug. 2020</span>
+                        </div>
+                        <p class="org">CodeFrog IT GmbH, Braunschweig</p>
+                        <ul>
+                            <li>
+                                Entwicklung einer plattformübergreifenden Trading-App in React Native mit
+                                Spring-Boot-Backend, inklusive Verarbeitung von Live-Börsendaten.
+                            </li>
+                            <li>
+                                Umsetzung einer Plattform für das Fahrzeug-Auslieferungsmanagement mit Angular und
+                                Spring Boot; Einführung einer CI/CD-Pipeline auf Basis von Bamboo.
+                            </li>
+                            <li>
+                                Umsetzung von Redux-State-Management und reaktiven RxJS-Patterns für komplexe
+                                Datenflüsse im UI.
+                            </li>
+                        </ul>
+                        <p class="letter">
+                            <a href="assets/files/codefrogRec.pdf" target="_blank">Empfehlungsschreiben</a
+                            >
+                        </p>
+                    </article>
+                    <article class="job">
+                        <div class="job-head">
+                            <h3>Softwareentwickler</h3>
+                            <span class="dates">Juni 2017 – März 2019</span>
+                        </div>
+                        <p class="org">Peter L. Reichertz Institut für Medizinische Informatik, Braunschweig</p>
+                        <ul>
+                            <li>
+                                Entwicklung eines regelbasierten Pay-for-Performance-Vergütungssystems mit dem Play
+                                Framework zur Abbildung von Anreizmodellen in klinischen Studien.
+                            </li>
+                            <li>
+                                Erweiterung des Java-Backends eines Clinical-Trial-Management-Systems (CTMS) um neue
+                                Module, die die manuelle Dateneingabe reduzierten.
+                            </li>
+                            <li>Administration von Deployment-Servern, Datenbanken und CI/CD-Pipelines.</li>
+                        </ul>
+                    </article>
+                    <article class="job">
+                        <div class="job-head">
+                            <h3>Webentwickler</h3>
+                            <span class="dates">Aug. 2016 – Juni 2017</span>
+                        </div>
+                        <p class="org">Advanced Dynamics, Köln</p>
+                        <ul>
+                            <li>Entwicklung eines internen Zeitmanagement-Kalenders in Angular.</li>
+                            <li>
+                                Entwicklung von Web-Scraping-Tools in PHP und Python zur automatisierten
+                                Datenaggregation aus externen Quellen.
+                            </li>
+                        </ul>
+                    </article>
+                    <article class="job">
+                        <div class="job-head">
+                            <h3>Backend-Entwickler (Praktikum)</h3>
+                            <span class="dates">Mai 2016 – Okt. 2016</span>
+                        </div>
+                        <p class="org">Brāv Conflict Resolution, Michigan City, Indiana, USA</p>
+                        <ul>
+                            <li>
+                                Implementierung von Peer-to-Peer-Video- und Audiokommunikation in Echtzeit mit WebRTC.
+                            </li>
+                        </ul>
+                        <p class="letter">
+                            <a href="assets/files/bravRec.pdf" target="_blank">Empfehlungsschreiben</a>
+                        </p>
+                    </article>
+                </section>
+                <section class="">
+                    <h2>Technische Kenntnisse</h2>
+                    <dl class="skills">
+                        <div class="row">
+                            <dt>Programmiersprachen</dt>
+                            <dd>Java 8/11/17/18, TypeScript, JavaScript (ES6+), CoffeeScript</dd>
+                        </div>
+                        <div class="row">
+                            <dt>Frameworks</dt>
+                            <dd>
+                                Spring Boot, Spring Security, Spring Data JPA, Spring AOP, Quarkus, Hibernate, Angular
+                                18, React Native, Django, Play Framework, Express.js, GWT
+                            </dd>
+                        </div>
+                        <div class="row">
+                            <dt>Frontend</dt>
+                            <dd>Angular, React, Ajax, jQuery, Bootstrap, SCSS/SASS</dd>
+                        </div>
+                        <div class="row">
+                            <dt>Architektur</dt>
+                            <dd>
+                                Microservices, RESTful API Design, GraphQL, Event-Driven Architecture, Domain-Driven
+                                Design
+                            </dd>
+                        </div>
+                        <div class="row">
+                            <dt>Cloud (AWS)</dt>
+                            <dd>EC2, VPC, S3, IAM, RDS, DynamoDB</dd>
+                        </div>
+                        <div class="row">
+                            <dt>CI/CD &amp; DevOps</dt>
+                            <dd>Docker, Jenkins, GitLab CI/CD, Bitbucket Pipelines, CircleCI, Bamboo, SonarQube</dd>
+                        </div>
+                        <div class="row">
+                            <dt>Datenbanken</dt>
+                            <dd>PostgreSQL, MySQL, MongoDB, DB2, Firebase, SQL</dd>
+                        </div>
+                        <div class="row">
+                            <dt>Testen</dt>
+                            <dd>JUnit 5, Mockito, Jest, TDD, Integration Testing</dd>
+                        </div>
+                    </dl>
+                </section>
+                <section class="">
+                    <h2>Ausbildung</h2>
+                    <div class="edu">
+                        <div class="job-head">
+                            <h3>M.Sc. Informatik</h3>
+                            <span class="dates">2014 – 2018</span>
+                        </div>
+                        <p class="org">Universität Bonn</p>
+                    </div>
+                    <div class="edu">
+                        <div class="job-head">
+                            <h3>B.Sc. Informatik</h3>
+                            <span class="dates">2010 – 2014</span>
+                        </div>
+                        <p class="org">Aserbaidschanische Staatliche Ölakademie</p>
+                    </div>
+                </section>
+                <section class="">
+                    <h2>Freiberufliche Projekte</h2>
+                    <div class="proj">
+                        <h3><a href="https://e4sv.short.gy/de-qrcode">DiscoverDE</a></h3>
+                        <p>
+                            React-Native-App zum Deutschlernen mit Hör- und Lesemodus, Mehrsprachigkeit und interaktiven
+                            Quizzen.
+                        </p>
+                    </div>
+                    <div class="proj">
+                        <h3><a href="https://e4sv.short.gy/java-1z0808">Java-1Z0-808</a></h3>
+                        <p>
+                            React-Native-App zur Prüfungsvorbereitung mit kapitelbasierten Quizzen, Fragen-Lesezeichen
+                            und Fortschrittsstatistik.
+                        </p>
+                    </div>
+                    <div class="proj">
+                        <h3>
+                            <a href="https://play.google.com/store/apps/details?id=com.device999.BullsAndCows"
+                                >Bulls &amp; Cows</a
+                            >
+                        </h3>
+                        <p>
+                            React-Native-Zahlenratespiel mit zwei Modi (gegen KI und Zahlensuche),
+                            Sieg-/Niederlage-Statistik und Abzeichen für Lösungen innerhalb einer vorgegebenen
+                            Schrittzahl.
+                        </p>
+                    </div>
+                    <div class="proj">
+                        <h3>Graiger Scrapper</h3>
+                        <p>
+                            Django-basierter Telegram-Bot, der Fahrzeugdaten per Long Polling ausliest; Anbindung über
+                            das Django-ORM.
+                        </p>
+                    </div>
+                </section>
+                <div class="two">
+                    <section class="">
+                        <h2>Publikation</h2>
+                        <p>
+                            <a href="http://ebooks.iospress.nl/volumearticle/51388"
+                                >Pay for Performance in Electronic Data Capture for Clinical Trials and Medical
+                                Registries</a
+                            ><br /><span class="muted"
+                                ><a
+                                    href="http://ebooks.iospress.nl/volume/ict-for-health-science-research-proceedings-of-the-efmi-2019-special-topic-conference-7-10-april-2019-hanover-germany"
+                                    >ICT for Health Science Research, EFMI 2019, IOS Press Ebooks</a
+                                ></span
+                            >
+                        </p>
+                    </section>
+                    <section class="">
+                        <h2>Zertifizierung</h2>
+                        <p>
+                            <a
+                                href="https://catalog-education.oracle.com/pls/certview/sharebadge?id=4DFA7F09A2EAD10953BA53E9F64103429FB1A588287BFE288982670829A50AE0"
+                                >Oracle Certified Associate, Java SE 8 Programmer</a
+                            ><br />
+                            <span class="muted">
+                                <a href="assets/files/certificates/oracle_associate.pdf" target="_blank">PDF</a>
+                            </span>
+                        </p>
+                    </section>
+                </div>
+                <section class="">
+                    <h2>Sprachen</h2>
+                    <ul class="langs">
+                        <li><strong>Russisch</strong> <span class="muted">Muttersprache</span></li>
+                        <li><strong>Aserbaidschanisch</strong> <span class="muted">Muttersprache</span></li>
+                        <li><strong>Englisch</strong> <span class="muted">Beruflich fließend</span></li>
+                        <li><strong>Türkisch</strong> <span class="muted">Beruflich fließend</span></li>
+                        <li><strong>Deutsch</strong> <span class="muted">Mittelstufe</span></li>
+                    </ul>
+                </section>
             </div>
-  
-
-            <div class="item">
-               <div class="meta">
-                  <div class="upper-row">
-                     <h3 class="job-title">Software Developer</h3>
-                     <div class="time">September 2020 - March 2022</div>
-                  </div>
-                  <!--//upper-row-->
-                  <div class="company">Universitätsklinikum, Bonn</div>
-               </div>
-               <div class="details">
-                  <table>
-
-
-                     <!--
-                        End
-                     -->
-                     <tr>
-                        <td>
-                           <i class="fa fa-dot-circle-o" aria-hidden="true" style="color:#2d7788"></i>
-                           Built a FHIR bundle visualization and search solution using Angular, enabling clinical researchers to navigate complex HL7/FHIR medical datasets more efficiently
-                        </td>
-                     </tr>
-                     <tr>
-                        <td>
-                           <i class="fa fa-dot-circle-o" aria-hidden="true" style="color:#2d7788"></i>
-                           Developed ETL modules to transform heterogeneous medical data into standardized FHIR entities, improving interoperability across several hospital information systems
-                        </td>
-                     </tr>
-                     <tr>
-                        <td>
-                           <i class="fa fa-dot-circle-o" aria-hidden="true" style="color:#2d7788"></i>
-                           Delivered a Spring Boot + Angular patient portal with role-based access control
-                        </td>
-                     </tr>
-                     <tr>
-                        <td>
-                           <i class="fa fa-dot-circle-o" aria-hidden="true" style="color:#2d7788"></i>
-                           Maintained unit test coverage using JUnit and Mockito across backend services
-                        </td>
-                     </tr>
-                  </table>
-                  <p><a href="assets/files/UKBRec.pdf" target="_blank">Recommendation Letter (in German)</a> </p>
-               </div>
-            </div>
-
-            <div class="item">
-               <div class="meta">
-                  <div class="upper-row">
-                     <h3 class="job-title">Software Developer</h3>
-                     <div class="time">April 2019 - August 2020</div>
-                  </div>
-                  <!--//upper-row-->
-                  <div class="company">CodeFrog IT GmbH, Braunschweig</div>
-               </div>
-               <div class="details">
-                  <table>
-                     <tr>
-                        <td>
-                           <i class="fa fa-dot-circle-o" aria-hidden="true" style="color:#2d7788"></i>
-                           Built a cross-platform financial trading mobile app using React Native with a Spring Boot backend, handling live stock data 
-                        </td>
-                     </tr>
-                     <tr>
-                        <td>
-                           <i class="fa fa-dot-circle-o" aria-hidden="true" style="color:#2d7788"></i>
-                           Engineered a vehicle delivery management platform with Angular/Spring Boot; introduced Bamboo-based CI/CD pipeline 
-                        </td>
-                     </tr>
-                     <tr>
-                        <td>
-                           <i class="fa fa-dot-circle-o" aria-hidden="true" style="color:#2d7788"></i>
-                           Implemented Redux state management and RxJS reactive patterns for complex UI data flows
-                        </td>
-                     </tr>
-                  </table>
-                  <p><a href="assets/files/codefrogRec.pdf" target="_blank">Recommendation Letter (in German)</a> </p>
-               </div>
-            </div>
-
-            <div class="item">
-               <div class="meta">
-                  <div class="upper-row">
-                     <h3 class="job-title">Software Developer</h3>
-                     <div class="time">June 2017 - March 2019</div>
-                  </div>
-                  <!--//upper-row-->
-                  <div class="company">Peter L. Reichertz Institut for Medical Informatics, Braunschweig</div>
-               </div>
-               <div class="details">
-                  <table>
-                     <tr>
-                        <td>
-                           <i class="fa fa-dot-circle-o" aria-hidden="true" style="color:#2d7788"></i>
-                           Developed a rule-based Pay-for-Performance reward system using Play Framework, supporting clinical trial incentive structures 
-                        </td>
-                     </tr>
-                     <tr>
-                        <td>
-                           <i class="fa fa-dot-circle-o" aria-hidden="true" style="color:#2d7788"></i>
-                           Extended a Java backend for a clinical trial management system (CTMS), adding new modules that reduced manual data entry 
-                        </td>
-                     </tr>
-                     <tr>
-                        <td>
-                           <i class="fa fa-dot-circle-o" aria-hidden="true" style="color:#2d7788"></i>
-                           Administered deployment servers, databases, and CI/CD pipelines
-                        </td>
-                     </tr>
-                  </table>
-               </div>
-            </div>
-
-
-
-            <div class="item">
-               <div class="meta">
-                  <div class="upper-row">
-                     <h3 class="job-title">Web-Developer</h3>
-                     <div class="time">August 2016 - June 2017</div>
-                  </div>
-                  <!--//upper-row-->
-                  <div class="company">Advanced Dynamics, Cologne</div>
-               </div>
-               <!--//meta-->
-               <div class="details">
-                  <table>
-                     <tr>
-                        <td>
-                           <i class="fa fa-dot-circle-o" aria-hidden="true" style="color:#2d7788"></i>
-                           Developed an internal time management calendar in Angular 
-                        </td>
-                     </tr>
-                     <tr>
-                        <td>
-                           <i class="fa fa-dot-circle-o" aria-hidden="true" style="color:#2d7788"></i>
-                           Built web scraping tools in PHP/Python that automated data aggregation from external sources
-                        </td>
-                     </tr>
-                  </table>
-               </div>
-               <!--//details-->
-            </div>
-            <!--//item-->
-            <!--//item-->
-            <div class="item">
-               <div class="meta">
-                  <div class="upper-row">
-                     <h3 class="job-title">Backend Developer (internship)</h3>
-                     <div class="time">May 2016–Oct 2016</div>
-                  </div>
-                  <!--//upper-row-->
-                  <div class="company">Brāv Conflict Resolution, Michigan City, Indiana</div>
-               </div>
-               <!--//meta-->
-               <div class="details">
-                  <table>
-                     <tr>
-                        <td>
-                           <i class="fa fa-dot-circle-o" aria-hidden="true" style="color:#2d7788"></i>
-                           Implemented real-time peer-to-peer communication features using WebRTC, enabling live video/audio sessions between users
-                        </td>
-                     </tr>
-                  </table>
-                  <p><a href="assets/files/bravRec.pdf" target="_blank">Recommendation Letter</a> </p>
-               </div>
-               <!--//details-->
-            </div>
-         </section>
-
-         <!--//freelance projects section-->
-         <section class="section projects-section">
-            <h2 class="section-title"><i class="fa fa-archive"></i>Freelance Projects</h2>
-
-            <!--//intro-->
-            <!--//item-->
-
-            <div class="item">
-               <div class="meta">
-                  <div class="upper-row">
-                     <h3 class="project-title" style="color:#2d7788">DiscoverDE <a href="https://e4sv.short.gy/de-qrcode" target="_blank"><i class="fa fa-external-link"></i></a></h3>
-                  </div>
-                  <!--//upper-row-->
-               </div>
-               <!--//meta-->
-               <div class="details">
-                  <i class="fa fa-dot-circle-o" aria-hidden="true" style="color:#2d7788"></i> React Native German language learning app with listening/reading modes, multilingual support, and interactive quizzes
-               </div>
-               <!--//details-->
-            </div>
-
-
-            <div class="item">
-               <div class="meta">
-                  <div class="upper-row">
-                     <h3 class="project-title" style="color:#2d7788">Java-1Z0-808 <a href="https://e4sv.short.gy/java-1z0808" target="_blank"><i class="fa fa-external-link"></i></a></h3>
-                  </div>
-                  <!--//upper-row-->
-               </div>
-               <!--//meta-->
-               <div class="details">
-                  <i class="fa fa-dot-circle-o" aria-hidden="true" style="color:#2d7788"></i> React Native exam preparation app with chapter-based quizzes, question bookmarking, and progress statistics
-               </div>
-               <!--//details-->
-            </div>
-
-
-            <div class="item">
-               <div class="meta">
-                  <div class="upper-row">
-                     <h3 class="project-title" style="color:#2d7788">Bulls&Cows <a href="https://play.google.com/store/apps/details?id=com.device999.BullsAndCows" target="_blank"><i class="fa fa-external-link"></i></a></h3>
-                  </div>
-                  <!--//upper-row-->
-               </div>
-               <!--//meta-->
-               <div class="details">
-                  <i class="fa fa-dot-circle-o" aria-hidden="true" style="color:#2d7788"></i> React Native code-breaking game with two modes (vs AI & number-finding challenge), statistics tracking for wins/losses, and an achievement badge system earned by solving within a predefined number of steps
-               </div>
-               <!--//details-->
-            </div>
-
-            <div class="item">
-               <div class="meta">
-                  <div class="upper-row">
-                     <h3 class="project-title" style="color:#2d7788">Graiger Scrapper</h3>
-                  </div>
-                  <!--//upper-row-->
-               </div>
-               <!--//meta-->
-               <div class="details">
-                  <i class="fa fa-dot-circle-o" aria-hidden="true" style="color:#2d7788"></i> Django-based Telegram bot scraping automotive data via long polling; integrated with Django ORM
-               </div>
-               <!--//details-->
-            </div>
-
-
-            <!--//item-->
-         </section>
-
-         <!--//skills-section-->
-         <section class="skills-section section">
-            <h2 class="section-title"><i class="fa fa-rocket"></i>Skills</h2>
-            <div>
-               <p><span class="job-title">Languages:</span><br/> Java 8/11/17/18, TypeScript, JavaScript (ES6+), CoffeeScript</p>
-               <p><span class="job-title">Frameworks:</span><br/> Spring Boot, Spring Security, Spring Data JPA, Spring AOP, Quarkus, Hibernate, Angular 18, React Native, Django, Play Framework, Express.js, GWT
-               </p>
-               <p><span class="job-title">Architecture:</span><br/> Microservices, RESTful API Design, GraphQL, Event-Driven Architecture, Domain-Driven Design</p>
-               <p><span class="job-title">Cloud (AWS):</span><br/> EC2, VPC, S3, IAM, RDS, DynamoDB</p>
-               <p><span class="job-title">CI/CD & DevOps:</span><br/>Docker, Jenkins, GitLab CI/CD, Bitbucket Pipelines, CircleCI, Bamboo, SonarQube</p>
-               <p><span class="job-title">Databases:</span><br/> PostgreSQL, MySQL, MongoDB, DB2, Firebase, SQL</p>
-               <p><span class="job-title">Testing:</span><br/> JUnit 5, Mockito, Jest, TDD, Integration Testing</p>
-               <p><span class="job-title">Frontend:</span><br/> React, Angular, Ajax, jQuery, Bootstrap, SCSS/SASS</p>
-            </div>
-         </section>
-         
-
-
-
-
-         <!--//certifications section-->
-         <section class="section projects-section">
-            <h2 class="section-title"><i class="fa fa-book"></i>Publications</h2>
-            <!--//intro-->
-            <!--//item-->
-            <div class="item">
-               <div class="meta">
-                  <div class="upper-row">
-                     <div class="project-title" style="color:#2d7788">
-                        <a target="_blank" href="http://ebooks.iospress.nl/volumearticle/51388">
-                           Pay for Performance in Electronic Data Capture for Clinical Trials and Medical Registries
-                        </a>
-                     </div>
-                  </div>
-                  <!--//upper-row-->
-               </div>
-               <div class="details">
-                  <table>
-                     <thead>
-                     </thead>
-                     <tbody>
-                        <tr>
-                           <td>
-                              <a target="_blank"
-                                 href="http://ebooks.iospress.nl/volume/ict-for-health-science-research-proceedings-of-the-efmi-2019-special-topic-conference-7-10-april-2019-hanover-germany">
-                                 ICT for Health Science Research</a>, EFMI 2019, IOS Press Ebooks
-                           </td>
-                        </tr>
-                     </tbody>
-                  </table>
-               </div>
-            </div>
-         </section>
-
-         <!--//publications section-->
-         <section class="section projects-section">
-            <h2 class="section-title"><i class="fa fa-bank"></i>Certifications</h2>
-            <!--//intro-->
-            <!--//item-->
-            <div class="item">
-               <div class="meta">
-                  <div class="upper-row">
-                     <div class="project-title" style="color:#2d7788">
-                        <a target="_blank" href="https://catalog-education.oracle.com/pls/certview/sharebadge?id=4DFA7F09A2EAD10953BA53E9F64103429FB1A588287BFE288982670829A50AE0">
-                           Oracle Certified Associate
-                        </a>
-                     </div>
-                  </div>
-                  <!--//upper-row-->
-               </div>
-               <div class="details">
-                  <table>
-                     <thead>
-                     </thead>
-                     <tbody>
-                        <tr>
-                           <td>
-                              <a target="_blank"  href="assets/files//certificates/oracle_associate.pdf">
-                                 Java SE 8 Programmer
-                              </a>
-                           </td>
-                        </tr>
-                     </tbody>
-                  </table>
-               </div>
-            </div>
-         </section>
-
-
-         
-      </div>
-      <!--//main-body-->
-   </div>
-   <!-- Javascript -->
-   
-   <script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
-   <!-- custom js -->
-   <script type="text/javascript" src="assets/js/main.js"></script>
-</body>
-
+        </div>
+        <script>
+            (function () {
+                var L = {
+                    en: {
+                        pdf: "Download PDF",
+                        file: "assets/files/CV_EN.pdf",
+                        title: "Sattar Rahimbayli – Software Developer",
+                    },
+                    de: {
+                        pdf: "PDF herunterladen",
+                        file: "assets/files/CV_DE.pdf",
+                        title: "Sattar Rahimbayli – Softwareentwickler",
+                    },
+                };
+                function pick() {
+                    var q = new URLSearchParams(location.search).get("lang");
+                    if (q && L[q]) return q;
+                    try {
+                        var s = localStorage.getItem("cv-lang");
+                        if (s && L[s]) return s;
+                    } catch (e) {}
+                    return (navigator.language || "en").toLowerCase().indexOf("de") === 0 ? "de" : "en";
+                }
+                function set(l, save) {
+                    document.documentElement.lang = l;
+                    document.title = L[l].title;
+                    var p = document.getElementById("pdf");
+                    p.textContent = L[l].pdf;
+                    p.href = L[l].file;
+                    document.querySelectorAll("[data-set]").forEach(function (b) {
+                        b.setAttribute("aria-pressed", b.dataset.set === l);
+                    });
+                    if (save) {
+                        try {
+                            localStorage.setItem("cv-lang", l);
+                        } catch (e) {}
+                    }
+                }
+                document.querySelectorAll("[data-set]").forEach(function (b) {
+                    b.addEventListener("click", function () {
+                        set(b.dataset.set, true);
+                    });
+                });
+                set(pick(), false);
+            })();
+        </script>
+    </body>
 </html>
